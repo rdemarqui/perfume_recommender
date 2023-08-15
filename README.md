@@ -1,6 +1,6 @@
 # Perfume Recommender System
 <p align="center">
-<img src="images\perfume_cover.jpg" class="center" width="50%"/>
+<img src="images\perfume_cover.jpg" class="center" width="35%"/>
 </p>
 
 ## Overview

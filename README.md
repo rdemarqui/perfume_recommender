@@ -7,7 +7,7 @@
 A recommendation system, also known as a recommender system, is a class of algorithms and techniques used in information filtering and decision-making processes. Its main purpose is to provide personalized suggestions or recommendations to users for items they might be interested in. These items could be products, services, movies, music, articles, or anything else that can be recommended based on user preferences and behavior. In this work, a perfume recommendation system will be built based on the scent description.
 
 ## Objectives
-Create a perfume recommendation app based on its scents. 
+Create a recommendation app based on perfume scents. 
 
 ## Tecnologies Used
 * python 3.9.16
@@ -38,7 +38,7 @@ Finally, we used gradio to build a demo app, capable of performing the recommend
 Even with limited resources and some assumptions adopted, it was possible to create a pretty decent recommend system, capable of delivering acceptable results. Below, a print of the developed App.
 
 <p align="center">
-<img src="images\app_gradio.png" class="center" width="100%"/>
+<img src="images\App_gradio.png" class="center" width="100%"/>
 </p>
 
 This work came from a personal need, where a perfume that I really like (Hugo Boss Soul) stopped being marketed. Unfortunately I couldn't find the first place in the list generated (Shirley May - Compass), but the second place can be easily found (Carolina Herrera - 212 Men White). I'll probably give it a chance...

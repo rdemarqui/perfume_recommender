@@ -38,7 +38,7 @@ Finally, we used gradio to build a demo app, capable of performing the recommend
 Even with limited resources and some assumptions adopted, it was possible to create a pretty decent recommend system, capable of delivering acceptable results. Below, a print of the developed App.
 
 <p align="center">
-<img src="images\App_gradio.png" class="center" width="100%"/>
+<img src="images\app_gradio.png" class="center" width="100%"/>
 </p>
 
 This work came from a personal need, where a perfume that I really like (Hugo Boss Soul) stopped being marketed. Unfortunately I couldn't find the first place in the list generated (Shirley May - Compass), but the second place can be easily found (Carolina Herrera - 212 Men White). I'll probably give it a chance...

@@ -30,7 +30,7 @@ For this work, we grouped the scents in a single description, given that not all
 
 The first task of text clean up was relatively simple, as the fields on the site were standardized. We just had to remove some special characters, leave the text in lower case and group the note subcategories (top, middle and base) into a single category. After this step, the perfume scents were vectorized using bag of words method from sklearn. We chose this method for it's simplicity and good results for this specific case.
 
-The cosine method was used for similarity calculation. Due to memory limitations for storing the resultant matrix (36969 x 36969), we used sparse output method. Our application gonna use a pre-calculated base of similarities, for this reason, we saved two matrices: One for perfume index `vect_index` and another for similarities values `vect_values' resulting from the cosine calculation. We saved both on pickle format.
+The cosine method was used for similarity calculation. Due to memory limitations for storing the resultant matrix (36969 x 36969), we used sparse output method. Our application gonna use a pre-calculated base of similarities, for this reason, we saved two matrices: One for perfume index `vect_index` and another for similarities values `vect_values` resulting from the cosine calculation. We saved both on pickle format.
 
 Finally, we used gradio to build a demo app, capable of performing the recommendation task based on brand and perfume name choices.
 

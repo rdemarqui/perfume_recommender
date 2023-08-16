@@ -9,6 +9,8 @@ A recommendation system, also known as a recommender system, is a class of algor
 ## Objectives
 Create a recommendation app based on perfume scents. 
 
+*Note: On line app can be viewed on https://huggingface.co/spaces/rdemarqui/perfume_recommender*
+
 ## Tecnologies Used
 * python 3.9.16
 * pandas 1.5.3

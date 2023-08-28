@@ -12,12 +12,12 @@ Create a recommendation app based on perfume scents.
 *Note: Online app can be viewed on https://huggingface.co/spaces/rdemarqui/perfume_recommender*
 
 ## Tecnologies Used
-* python 3.9.16
-* pandas 1.5.3
-* numpy 1.22.4
-* sklearn 1.2.2
-* scipy 1.10.0
-* gradio 3.39.0
+* `python 3.9.16`
+* `pandas 1.5.3`
+* `numpy 1.22.4`
+* `sklearn 1.2.2`
+* `scipy 1.10.0`
+* `gradio 3.39.0`
 
 ## About the Data
 The data was scrapped from site fragrantica.com [1]. The dataset contains 2.570 unique brands, 36.969 perfumes and 2.145 different scents.

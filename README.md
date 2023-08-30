@@ -1,4 +1,7 @@
-# Perfume Recommender System
+<div align="center">
+  <h1>Perfume Recommender System</h1>
+</div>
+
 <p align="center">
 <img src="images\perfume_cover.jpg" class="center" width="35%"/>
 </p>

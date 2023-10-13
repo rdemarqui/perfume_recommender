@@ -23,7 +23,7 @@ Create a recommendation app based on perfume scents.
 * `gradio 3.39.0`
 
 ## About the Data
-The data was scrapped from site fragrantica.com [1]. The dataset contains 2.570 unique brands, 36.969 perfumes and 2.145 different scents.
+The data was scrapped from the site fragrantica.com [1]. The dataset contains 2.570 unique brands, 36.969 perfumes, and 2.145 different scents.
 
 ## Methodology
 Fragrance notes are the individual scent layers of ingredients that make up a fragrance. They are the building blocks of a fragrance and contribute to its overall scent profile. Fragrance notes are typically categorized into three main types: top notes, heart notes (also known as middle or mid notes), and base notes. Each note plays a specific role in the fragrance’s development and longevity [2]. 
@@ -33,23 +33,23 @@ Fragrance notes are the individual scent layers of ingredients that make up a fr
 
 For this work, we grouped the scents in a single description, given that not all samples in the dataset have the scent division by notes, even though such division influences the performance and, consequently, the real similarity between perfumes.
 
-The first task of text clean up was relatively simple, as the fields on the site were standardized. We just had to remove some special characters, leave the text in lower case and group the note subcategories (top, middle and base) into a single category. After this step, the perfume scents were vectorized using bag of words method from sklearn. We chose this method for it's simplicity and good results for this specific case.
+The first task of text cleanup was relatively simple, as the fields on the site were standardized. We just had to remove some special characters, leave the text in lowercase and group the note subcategories (top, middle, and base) into a single category. After this step, the perfume scents were vectorized using the bag of words method from sklearn. We chose this method for its simplicity and good results for this specific case.
 
-The cosine method was used for similarity calculation. Due to memory limitations for storing the resultant matrix (36969 x 36969), we used sparse output method. Our application gonna use a pre-calculated base of similarities, for this reason, we saved two matrices: One for perfume index `vect_index` and another for similarities values `vect_values` resulting from the cosine calculation. We saved both on pickle format.
+The cosine method was used for similarity calculation. Due to memory limitations for storing the resultant matrix (36969 x 36969), we used the sparse output method. Our application gonna use a pre-calculated base of similarities, for this reason, we saved two matrices: One for perfume index `vect_index` and another for similarities values `vect_values` resulting from the cosine calculation. We saved both in pickle format.
 
-Finally, we used gradio to build a demo app, capable of performing the recommendation task based on brand and perfume name choices.
+Finally, we used Gradio to build a demo app, capable of performing the recommendation task based on brand and perfume name choices.
 
 ## Results and Conclusions
-Even with limited resources and some assumptions adopted, it was possible to create a pretty decent recommend system, capable of delivering acceptable results. Below, a print of the developed App.
+Even with limited resources and some assumptions adopted, it was possible to create a pretty decent recommend system, capable of delivering acceptable results. Below, is a print of the developed App.
 
 <p align="center">
 <img src="images\App_gradio.png" class="center" width="100%"/>
 </p>
 
-This work came from a personal need, where a perfume that I really like (Hugo Boss Soul) stopped being marketed. Unfortunately I couldn't find the first place in the list generated (Shirley May - Compass), but the second place can be easily found (Carolina Herrera - 212 Men White). I'll probably give it a chance...
+This work came from a personal need, where a perfume that I like (Hugo Boss Soul) stopped being marketed. Unfortunately, I couldn't find the first place in the list generated (Shirley May - Compass), but the second place can be easily found (Carolina Herrera - 212 Men White). I'll probably give it a chance...
 
 
-**Future improvements proposal:** As mentioned above, the division of scents into notes is crucial for the characteristic of perfumes. Unfortunately, the dataset used didn't have this division for all elements. Certainly, a richer dataset could yield better results. Thinking about text embedding, for this solution, the simplest form of vectorization (bag of words) was employed, but other methodologies could also be tested, such as TF-IDF, Word2vec, FastText, Doc2vec, and even transformers.
+**Future improvements proposal:** As mentioned above, the division of scents into notes is crucial for the characteristics of perfumes. Unfortunately, the dataset used didn't have this division for all elements. Certainly, a richer dataset could yield better results. Thinking about text embedding, for this solution, the simplest form of vectorization (bag of words) was employed, but other methodologies could also be tested, such as TF-IDF, Word2vec, FastText, Doc2vec, and even transformers.
 
 ## References
 * [1] https://www.fragrantica.com/

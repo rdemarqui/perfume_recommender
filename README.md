@@ -59,7 +59,8 @@ Even with limited resources and some assumptions adopted, it was possible to cre
 <p align="justify">
 This work came from a personal need, where a perfume that I like (Hugo Boss Soul) stopped being marketed. Unfortunately, I couldn't find the first place in the list generated (Shirley May - Compass), but the second place can be easily found (Carolina Herrera - 212 Men White). I'll probably give it a chance...
 
-**Future improvements proposal:** As mentioned above, the division of scents into notes is crucial for the characteristics of perfumes. Unfortunately, the dataset used didn't have this division for all elements. Certainly, a richer dataset could yield better results. Thinking about text embedding, for this solution, the simplest form of vectorization (bag of words) was employed, but other methodologies could also be tested, such as TF-IDF, Word2vec, FastText, Doc2vec, and even transformers.
+<p align="justify">
+<b>Future improvements proposal:</b>  As mentioned above, the division of scents into notes is crucial for the characteristics of perfumes. Unfortunately, the dataset used didn't have this division for all elements. Certainly, a richer dataset could yield better results. Thinking about text embedding, for this solution, the simplest form of vectorization (bag of words) was employed, but other methodologies could also be tested, such as TF-IDF, Word2vec, FastText, Doc2vec, and even transformers.
 
 ## References
 * [1] https://www.fragrantica.com/
